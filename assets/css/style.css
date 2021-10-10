@@ -14,8 +14,14 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 46px;
     background-color: #000;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 #nav > li {
@@ -71,17 +77,48 @@ html {
     font-size: 15px;
 }
 
-#search-button {
+#search-button a {
     /* position: absolute; */
+    padding: 0 24px;;
+    line-height: 46px;
     font-size: 15px;
     color: #fff;
     float: right;
     height: 46px;
 }
 
+#search-button:hover a {
+    background-color: #F44336;
+}
+
 #slider {
-    min-height: 500px;
-    background-color: aqua;
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    /* Căn giữa nội dung */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* ================= */
+}
+
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #content {
