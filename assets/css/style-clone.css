@@ -13,8 +13,12 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 46.4px;
     background-color: #000;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 #nav {
@@ -70,10 +74,43 @@ ul {
     padding: 0 16px;
 }
 
+#search-button a {
+    position: absolute;
+    right: 0;
+    padding: 0 24px;
+    line-height: 46.4px;
+    height: 46.4px;
+    color: #fff;
+}
+
+#search-button:hover a{
+    background-color: #F44336;
+}
 
 #slider {
-    min-height: 500px;
-    background-color: aqua;
+    position: relative;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background: url(../img/chicago.jpg) top center / cover no-repeat;
+}
+
+#slider .content-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 47px;
+    text-align: center;
+    color: #fff;
+}
+
+#slider .content-heading {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#slider .content-text {
+    font-weight: bold;
 }
 
 #content {
