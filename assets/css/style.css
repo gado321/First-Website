@@ -186,6 +186,7 @@ html {
     background-color: #fff;
     color: #757575;
     border: 1px solid #000;
+    margin-top: 35px;
 }
 
 .booking-tour li {
@@ -216,7 +217,64 @@ html {
     color: #fff;
 }
 
+.tour-details {
+    padding: 32px 0;
+    margin: 0 -8px;
+    overflow: hidden;
+}
 
+.tour-details .details-section {
+    width: calc(100% / 3);
+    padding: 0 8px;
+    color: #000;
+    float: left;
+}
+
+.tour-details .details-section img {
+    width: 100%;
+    display: block;
+}
+
+.tour-details .details-section img:hover {
+    opacity: 0.6;
+}
+
+.tour-details .details {
+    padding: 0 16px;
+    background-color: #fff;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+.tour-details .address {
+    padding-top: 15px;
+    font-weight: bolder;
+}
+
+.tour-details .date-time {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.tour-details .content {
+    margin: 15px 0;
+}
+
+.tour-details .buy-button a {
+    display: block;
+    width: fit-content;
+    padding: 8px 16px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.tour-details .buy-button a:hover {
+    background-color: #ccc;
+    color: #000;
+}
 
 #footer {
 
