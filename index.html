@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Em tap code hihi</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/font-awesome-free/css/all.css">
@@ -92,7 +92,7 @@
                                 <div class="address">New York</div>
                                 <div class="date-time">Fri 27 Nov 2016</div>
                                 <div class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="buy-button"><a href="">Buy Tickets</a></div>
+                                <button class="buy-button js-buy-button">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="details-section">
@@ -101,7 +101,7 @@
                                 <div class="address">Paris</div>
                                 <div class="date-time">Sat 28 Nov 2016</div>
                                 <div class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="buy-button"><a href="">Buy Tickets</a></div>
+                                <button class="buy-button js-buy-button">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="details-section">
@@ -110,7 +110,7 @@
                                 <div class="address">New York</div>
                                 <div class="date-time">Sun 29 Nov 2016</div>
                                 <div class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="buy-button"><a href="">Buy Tickets</a></div>
+                                <button class="buy-button js-buy-button">Buy Tickets</button>
                             </div>
                         </div>
                         
@@ -132,6 +132,72 @@
         <div id="footer">
             
         </div>
+
+        <!-- Modal -->
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <button class="close-btn js-get-exit-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-header">
+                    <i style="font-size: 30px;" class="fas fa-suitcase"></i>
+                    Tickets
+                </div>
+                
+                <div class="modal-body">
+                    <label for="quantity" class="modal-label">
+                        <i class="fas fa-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+
+                    <label for="mail" class="modal-label">
+                        <i class="fas fa-user"></i>
+                        Send To
+                    </label>
+                    <input id="mail" type="text" class="modal-input" placeholder="Enter email">
+                
+                    <button class="buy-btn js-get-exit-modal">
+                        PAY
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+
+                <div class="modal-footer">
+                    Need
+                    <a href="">help?</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-button')
+        const getModal = document.querySelector('.js-modal')
+        const getExitModal = document.querySelector('.js-get-exit-modal')
+        const getModalContainer = document.querySelector('.js-modal-container')
+
+        // Hàm hiển thị modal mua vé (thêm class open vào model)
+        function showBuyModel() {
+            getModal.classList.add('open')
+        }
+
+        // Hàm ẩn modal mua vé (bỏ class open của model)
+        function closeBuyModel() {
+            getModal.classList.remove('open')
+        }
+
+        // Lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyModel)
+        }
+        // Nghe hành vi click vào nút close button
+        getExitModal.addEventListener('click', closeBuyModel)
+        getModal.addEventListener('click',closeBuyModel)
+        getModalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html> 

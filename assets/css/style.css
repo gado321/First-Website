@@ -228,6 +228,7 @@ html {
     padding: 0 8px;
     color: #000;
     float: left;
+    
 }
 
 .tour-details .details-section img {
@@ -260,7 +261,7 @@ html {
     margin: 15px 0;
 }
 
-.tour-details .buy-button a {
+.tour-details .buy-button {
     display: block;
     width: fit-content;
     padding: 8px 16px;
@@ -269,13 +270,122 @@ html {
     color: #fff;
     border-radius: 2px;
     text-decoration: none;
+    border: none;
 }
 
-.tour-details .buy-button a:hover {
+.tour-details .buy-button:hover {
     background-color: #ccc;
     color: #000;
 }
 
 #footer {
 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    position: relative;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    animation: modalFadeIn ease-out 0.35s;
+}
+
+.modal-container .close-btn {
+    background-color: #009688;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #fff;
+    padding: 8px 16px;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-container .close-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-container .modal-header {
+    background-color: #009688;
+    height: 129px;
+    line-height: 129px;
+    font-size: 30px;
+    font-weight: 400px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-container .modal-body {
+    padding: 0 16px;
+}
+
+.modal-container .modal-label {
+    display: block;
+    width: fit-content;
+    margin: 16px 0;
+}
+
+.modal-container .modal-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+}
+
+.modal-container .buy-btn {
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+}
+
+.modal-container .buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-container .modal-footer {
+    padding: 0 16px;
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-514px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-container .modal-footer a{
+    color: #2196F3;
 }
