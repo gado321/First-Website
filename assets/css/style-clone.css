@@ -6,6 +6,8 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 #main {
@@ -19,6 +21,7 @@ html {
     height: 46.4px;
     background-color: #000;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 #nav {
@@ -115,6 +118,152 @@ ul {
 
 #content {
 
+}
+
+#tour {
+    background-color: #000;
+    color: #fff;
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-title {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    font-weight: 400px;
+    text-align: center;
+}
+
+
+
+#content .content-text {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+#content .band-members {
+    overflow: hidden;
+}
+
+#content .member {
+    width: calc(100% / 3);
+    float: left;
+}
+
+#content .member p {
+    margin: 15px 0;
+}
+
+#content .member img{
+    width: 154px;
+    height: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+#content .band-members {
+    padding: 32px 0;
+}
+
+#content .content-present {
+    opacity: 0.6;
+    font-style: italic;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#content .book-schedule {
+    margin-top: 38px;
+}
+
+#content .book-schedule li{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .book-schedule .quantity{
+    float: right;
+    padding: 0 8px;
+    margin-right: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#content .book-schedule .sold-out {
+    display: inline-block;
+    margin-left: 16px;
+    background-color: #F44336;
+    padding: 0 8px;
+    color: #fff;
+}
+
+#content .book-place-list {
+    padding: 32px 0;
+    overflow: hidden;
+    margin: 0 -8px;
+}
+
+#content .book-place {
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+#content .details {
+    background-color: #fff;
+    color: #000;
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+
+#content .book-place img {
+    display: block;
+    width: 100%;
+}
+
+#content .book-place .book-address {
+    display: block;
+    font-weight: bolder;
+    padding-top: 15px;
+    /* margin-bottom: 15px; */
+}
+
+#content .book-place .book-time {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .book-place .book-description {
+    margin: 15px 0;
+}
+
+#content .book-place .book-btn {
+    display: block;
+    font-size: 15px;
+    padding: 8px 16px;
+    line-height: 1.5;
+    border: none;
+    color: #fff;
+    background-color: #000;
+
+}
+
+#content .book-place .book-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 #footer {
