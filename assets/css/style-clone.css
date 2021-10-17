@@ -269,3 +269,106 @@ ul {
 #footer {
 
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    padding-top: 100px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal .modal-container {
+    width: 900px;
+    height: fit-content;
+    background-color: #fff;
+    position: relative;
+    animation: modalFadeIn ease-out 0.35s;
+}
+
+.modal .modal-header {
+    padding: 42px 16px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    background-color: #009688;
+    text-align: center;
+    color: #fff;
+}
+
+.modal .modal-body {
+    padding: 0.15px 16px;
+}
+
+.modal .modal-label {
+    display: block;
+    margin: 15px 0;
+}
+
+.modal .modal-input {
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+}
+
+.modal .pay-btn {
+    display: block;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 16px 0;
+}
+
+.modal-container .pay-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal .modal-footer {
+    padding: 0 16px;
+    margin: 15px 0;
+    float: right;
+}
+
+.modal-container .close-btn {
+    background-color: #009688;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #fff;
+    padding: 8px 16px;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-container .close-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-514px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

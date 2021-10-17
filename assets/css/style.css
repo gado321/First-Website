@@ -10,6 +10,25 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.row {
+    padding: 32px 0;
+    margin: 0 -8px;
+    overflow: hidden;
+}
+
+.col {
+    padding: 0 8px;
+    float: left;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.align-center {
+    text-align: center !important;
+}
+
 #main {
     /* position: relative; */
 }
@@ -156,22 +175,11 @@ html {
     line-height: 1.5;
 }
 
-#band .members-list {
-    padding: 32px 0;
-    overflow: hidden;
-    text-align: center;
-}
-
-.members-list .member {
-    float: left;
-    width: calc(100% / 3);
-}
-
-.members-list .member-name {
+#band .member-name {
     margin: 15px 0;
 }
 
-.members-list img {
+#band img {
     width: 154px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -217,51 +225,41 @@ html {
     color: #fff;
 }
 
-.tour-details {
-    padding: 32px 0;
-    margin: 0 -8px;
-    overflow: hidden;
-}
-
-.tour-details .details-section {
-    width: calc(100% / 3);
-    padding: 0 8px;
+#tour .details-section {
     color: #000;
-    float: left;
-    
 }
 
-.tour-details .details-section img {
+#tour .details-section img {
     width: 100%;
     display: block;
 }
 
-.tour-details .details-section img:hover {
+#tour .details-section img:hover {
     opacity: 0.6;
 }
 
-.tour-details .details {
+#tour .details {
     padding: 0 16px;
     background-color: #fff;
     padding-bottom: 16px;
     line-height: 1.5;
 }
 
-.tour-details .address {
+#tour .address {
     padding-top: 15px;
     font-weight: bolder;
 }
 
-.tour-details .date-time {
+#tour .date-time {
     margin: 15px 0;
     opacity: 0.6;
 }
 
-.tour-details .content {
+#tour .content {
     margin: 15px 0;
 }
 
-.tour-details .buy-button {
+#tour .buy-button {
     display: block;
     width: fit-content;
     padding: 8px 16px;
@@ -273,7 +271,7 @@ html {
     border: none;
 }
 
-.tour-details .buy-button:hover {
+#tour .buy-button:hover {
     background-color: #ccc;
     color: #000;
 }
@@ -389,3 +387,4 @@ html {
 .modal-container .modal-footer a{
     color: #2196F3;
 }
+

@@ -93,7 +93,7 @@
                                 <p class="book-address">New York</p>
                                 <p class="book-time">Fri 27 Nov 2016</p>
                                 <div class="book-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="book-btn">Buy Tickets</button>
+                                <button class="book-btn js-book-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="book-place">
@@ -102,7 +102,7 @@
                                 <p class="book-address">New York</p>
                                 <p class="book-time">Fri 27 Nov 2016</p>
                                 <div class="book-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="book-btn">Buy Tickets</button>
+                                <button class="book-btn js-book-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="book-place">
@@ -111,7 +111,7 @@
                                 <p class="book-address">New York</p>
                                 <p class="book-time">Fri 27 Nov 2016</p>
                                 <div class="book-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="book-btn">Buy Tickets</button>
+                                <button class="book-btn js-book-btn">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,66 @@
 
         </div>
 
-        <div class="modal"></div>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <button class="close-btn js-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-header">
+                    <i style="font-size: 30px;" class="fas fa-suitcase"></i>
+                    Tickets
+                </div>
+                <div class="modal-body">
+                    <label for="" class="modal-label">
+                        <i class="fas fa-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input type="text" class="modal-input" placeholder="How many?">
+
+                    <label for="" class="modal-label">
+                        <i class="fas fa-user"></i>
+                        Send To
+                    </label>
+                    <input type="text" class="modal-input" placeholder="Enter email">
+                
+                    <button class="pay-btn">
+                        PAY
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+
+                <div class="modal-footer">
+                    Need
+                    <a href="#">help?</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const bookBtns = document.querySelectorAll('.js-book-btn')
+        const getModal = document.querySelector('.js-modal')
+        const getHideBtn = document.querySelector('.js-close-btn')
+        const getModalContainer = document.querySelector('.js-modal-container')
+
+        function showBuyModel() {
+            getModal.classList.add('open')
+        }
+
+        function hideBuyModel () {
+            getModal.classList.remove('open')
+        }
+
+        for (const bookBtn of bookBtns) {
+            bookBtn.addEventListener('click', showBuyModel)
+        }
+
+        getHideBtn.addEventListener('click', hideBuyModel)
+        getModal.addEventListener('click', hideBuyModel)
+        getModalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>
