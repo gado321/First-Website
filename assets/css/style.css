@@ -8,6 +8,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .row {
@@ -21,12 +22,35 @@ html {
     float: left;
 }
 
+.col-half {
+    width: 50%;
+}
+
 .col-third {
     width: calc(100% / 3);
 }
 
+.col-full {
+    width: 100%;
+}
+
 .align-center {
     text-align: center !important;
+}
+
+.mt-8 {
+    margin-bottom: 8px !important;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.input-form {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
 }
 
 #main {
@@ -269,6 +293,7 @@ html {
     border-radius: 2px;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 }
 
 #tour .buy-button:hover {
@@ -388,3 +413,62 @@ html {
     color: #2196F3;
 }
 
+#contact p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contact .form-submit-btn {
+    margin: 8px 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+}
+
+#contact .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#contact i[class*='fas fa'] {
+    width: 30px;
+    display: inline-block;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    color: #757575;
+}
+
+#footer .logo {
+    text-align: center;
+}
+
+#footer .logo i {
+    font-size: 24px;
+    padding-left: 2px;
+    line-height: 1.5;
+}
+
+#footer .logo i:hover {
+    opacity: 0.6;
+}
+
+#footer .copyright {
+    width: 100%;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#footer .copyright a {
+    color: inherit;
+}

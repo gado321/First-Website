@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em tap code hihi</title>
+    <title>The Band</title>
+    <link rel="shortcut icon" href="./assets/img/guitar.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/font-awesome-free/css/all.css">
 </head>
 <body>
     <div id="main">
+        <!-- Header -->
         <div id="header">
             <!-- Begin: nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">
                         More
                         <i class="arrowDown fas fa-caret-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,6 +43,7 @@
             <!-- End: Search button -->
         </div>
 
+        <!-- Slider -->
         <div id="slider">
             <div class="text-content">
                 <h3 class="text-heading">New York</h3>
@@ -48,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Content -->
         <div id="content">
             <!-- Band -->
             <div id="band">
@@ -119,18 +123,55 @@
             </div>
         </div>
 
-            <!-- Contact -->
-            <div id="contact">
-                <div class="content-section">
-                    <div class="content-heading">CONTACT</div>
-                    <div class="content-present">Fan? Drop a note!</div>
-                    <div class="content-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <!-- Contact -->
+        <div id="contact">
+            <div class="content-section">
+                <div class="content-heading">CONTACT</div>
+                <div class="content-present">Fan? Drop a note!</div>
+                        
+                <div class="row">
+                    <div class="col col-half">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half">
+                        <form action="">
+                            <div class="col col-half">
+                                <input class="input-form mt-8" type="text" name="" required placeholder="Name" id="">
+                            </div>
+                            <div class="col col-half">
+                                <input class="input-form mt-8" type="email" name="" required placeholder="Email" id="">
+                            </div>
+                            <div class="col col-full">
+                                <input class="input-form mt-8" type="text" name="" required placeholder="Message" id="">
+                            </div>
+                            <div class="col col-full">
+                                <input class="form-submit-btn" type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="map-section">
+            <img src="./assets/img/map.jpg" alt="">
+        </div>
+
         <div id="footer">
-            
+            <div class="logo">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="copyright">
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+            </div>
         </div>
 
         <!-- Modal -->
@@ -150,13 +191,13 @@
                         <i class="fas fa-shopping-cart"></i>
                         Tickets, $15 per person
                     </label>
-                    <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+                    <input id="quantity" type="text" class="input-form" placeholder="How many?">
 
                     <label for="mail" class="modal-label">
                         <i class="fas fa-user"></i>
                         Send To
                     </label>
-                    <input id="mail" type="text" class="modal-input" placeholder="Enter email">
+                    <input id="mail" type="text" class="input-form" placeholder="Enter email">
                 
                     <button class="buy-btn js-get-exit-modal">
                         PAY
